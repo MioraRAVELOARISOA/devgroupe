@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ricov</title>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+<div class="row">
+<h4 class="text-center">IL FAUT REPONDRE A TOUS POUR DEBLOQUER LE NIVEAU SUIVANT</h4>
+	<div class="col-sm-3">
+	
+
+		<div class="btn btn-block btn-lg btn-primary active">NIVEAUX 1</div><br>
+
+
+		<div class="btn btn-block btn-lg btn-primary abled" style="background-color: #E91E63">NIVEAUX 2</div><br>
+		<div class="btn btn-block btn-lg btn-primary abled" style="background-color: #9C27B0">NIVEAUX 3</div><br>
+		<div class="btn btn-block btn-lg btn-primary abled" style="background-color: #673AB7">NIVEAUX 4</div><br>
+		<div class="btn btn-block btn-lg btn-primary abled" style="background-color: #3F51B5">NIVEAUX 5</div><br>
+		<div class="btn btn-block btn-lg btn-primary abled" style="background-color: #009688">NIVEAUX 6</div><br>
+		<div class="btn btn-block btn-lg btn-primary abled" style="background-color: #4CAF50">NIVEAUX 7</div><br>
+		<div class="btn btn-block btn-lg btn-primary abled" style="background-color: #00BCD4">NIVEAUX 8</div><br>
+		<div class="btn btn-block btn-lg btn-primary abled" style="background-color: #5C6BC0">NIVEAUX 9</div><br>
+		<div class="btn btn-block btn-lg btn-primary abled" style="background-color: #EC407A">NIVEAUX 10</div><br>
+		<br>
+	</div>
+	<div class="col-sm-9" ng-app="niveau" ng-controller="jeux">
+		<h4 class="text-center" style="background-color: #E91E63"><b>NIVEAUX 1</b></h4><br>
+			<div class="col-sm-6">
+				<kbd>QUESTION :</kbd><br>
+				<textarea class="form-control" cols="3" rows="4" readonly style="cursor: none;" id="qst"></textarea>
+			</div>
+			<div class="col-sm-6">
+				<kbd>Votre reponse :</kbd><br>
+				<textarea class="form-control" cols="3" rows="4" required ng-model="reponse" id="rep"></textarea>
+			</div><br><br>
+		<h3><span id="tips" class="label label-lg label-warning"></span></h3><br>
+		<kbd>VOUS AVEZ DIT :</kbd> {{reponse}} <br><br>
+    <input type="reset" class="btn btn-danger" value="Recommencer" spellcheck="off" id="reco">
+		<input type="submit" class="btn btn-danger" value="VALIDER" spellcheck="off" id="cont">
+		<img src="assets/img/l.jpg" class="img-responsive">
+
+
+	</div>
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/angular.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
